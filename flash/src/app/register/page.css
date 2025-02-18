@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="number"],
+input[type="address"],
+input[type="pincode"],
+input[type="name"]{
+    @apply block w-full my-2 rounded-xl;
+    @apply border p-2 border-gray-300 bg-gray-200;
+}
+
+button{
+    @apply border border-gray-700 font-semibold;
+    @apply block w-full text-gray-700 font-semibold rounded-xl
+    py-1;
+}
+
+
+
+
+button[type="submit"]{
+    @apply bg-gray-500 text-white italic hover:shadow-lg hover:translate-y-1 hover:scale-110 hover:transition duration-300 hover:ease-in-out;
+}

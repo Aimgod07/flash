@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "./components/layout/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +23,14 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <main className="max-w-6xl mx-auto p-4">
+           <Header />
         {children}
+        <footer className="bg-gray-800 text-white text-center py-4">
+    <p>&copy; 2021 Zomato</p>
+   </footer>
+        </main>
+       
       </body>
     </html>
   );

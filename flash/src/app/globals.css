@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.img{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  }
+
+  .img:hover{
+    transform: scale(1.2);
+    transition: transform 1s;
+  }
+

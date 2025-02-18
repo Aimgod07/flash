@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.pizza1{
+    height: 400px;
+    width: 600px;
+}
+
+.hero{
+    @apply grid;
+    grid-template-columns: .4fr .7fr;
+}
+.zomato{
+    color:red;
+    
+}
